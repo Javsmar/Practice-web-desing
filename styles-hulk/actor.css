@@ -1,0 +1,123 @@
+.actor{
+    width: 100%;
+    
+}
+.actor-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid rgb(241, 8, 164); */
+}
+
+
+.actor-about{
+    width: 100%;
+    position: relative;
+    right: 170px;
+    top: 160px;
+    transform: rotate(-90deg);
+    z-index: 50;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 3px 2px black;
+    padding: 20px;
+    /* border: 2px solid rgb(243, 142, 10); */
+}
+.actor-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen{
+    width: 100%;
+    position: relative;
+    bottom: 65px;
+    z-index: 0;
+    transform:scaleX(-1);
+}
+
+
+.actor .actor-content .actor-about-biography .the-actor{
+    width: 100%;
+}
+
+.the-actor{
+    width: 100%;
+    font-size: x-large;
+    position: absolute;
+    top: 980px;
+    right: 0px;
+    color: red;
+    text-shadow: 2px 3px 2px black;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    /* border: 2px solid rgb(224, 248, 5); */
+}
+
+.mark-parrafo{
+    width: 100%;
+    position: absolute;
+    top: 1030px;
+    left: 0px;
+    font-size: 13px;
+    text-align: justify;
+    color: red;
+    line-height: 20px;
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    font-size: 13px;
+} 
+
+/*-------------------- Media Queries---------------------*/
+
+@media screen and (768px <= width){
+    
+    .imagen{
+        width: 100%;
+        position: relative;
+        bottom: 65px;
+        z-index: 0;
+        transform:scaleX(-1);
+    }
+
+    .actor-about{
+        right: 310px;
+        top: 350px;
+        font-size: x-large;
+        
+    }
+
+    .mark-parrafo{
+        top: 1486px;
+        left: 0px;
+        font-size:x-large;
+        line-height: 28px;
+    } 
+
+    .the-actor{
+        font-size: xx-large;
+        position: absolute;
+        top: 1380px;
+    }
+
+@media screen and (1024px <= width){
+        .actor-about{
+            right: 460px;
+            top: 320px;
+            font-size: x-large;
+        }
+        .mark-parrafo{
+            top: 1850px;
+            line-height: 30px;
+            font-size: 28px;
+        } 
+        
+        .the-actor{
+            font-size: xx-large;
+            position: absolute;
+            top: 1750px;
+        }
+}

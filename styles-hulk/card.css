@@ -1,0 +1,67 @@
+
+.card{
+    width: 100%;
+    position: relative;
+    top: 310px;
+    
+    background-image: 
+    url(../assets/app/hulk_sin_fondo.png);
+    background-repeat: no-repeat;
+    background-position: 50px;
+    background-position-x: center;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 50px 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.form__element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+
+}
+
+.for__label{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form__input{
+    padding: 16px 12px;
+    border-radius: 5px;
+    background-color: rgba(247, 4, 4, 0.4);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+textarea::placeholder, input::placeholder{
+    color:#cbcbcb
+}
+
+.btn{
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--main-brand-color);
+    font-size: 13px;
+    align-items: center;
+    gap: 10px;
+}
+.btn1{
+    
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--main-brand-color);
+    font-size: 13px;
+    align-items: center;
+    
+}
