@@ -1,0 +1,21 @@
+.main{
+    width: 100%;
+    
+}
+
+.main .banner .banner-image img{
+    width: 100%;
+    border: 2px solid rgb(238, 130, 6);
+    filter: saturate(400%);
+} 
+
+
+.main .banner-content{
+    width: 100%;
+    position: absolute;
+    bottom: 190px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+/*-------------------- Media Queries---------------------*/

@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    position: sticky;
+    background-color: var(--main-bg-color);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.header .header-logo{
+    width: 30%;
+}
+
+.header .header-logo img{
+    width: 90%;
+}
+
+/*-------------------- Nav ---------------------*/
+.header .header-nav{
+    width: 50%;
+}
+
+.header .header-nav .header-nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header .header-nav .header-nav-list a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: 500;
+}
+
+.btn-hidden{
+    display: none;
+}
+
+/*-------------------- Media Queries---------------------*/
+
+@media screen and (768px <= width){
+    .btn-hidden{
+        display: block;
+    }
+
+    .header .header-nav{
+        width: 30%;
+    }
+}
+
+@media screen and (1024px <= width){
+    .btn-hidden{
+        display: block;
+    }
+
+    .header .header-nav{
+        width: 30%;
+    }
+
+    .header .header-nav .header-nav-list a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (1440px <= width){
+    .btn-hidden{
+        display: block;
+    }
+
+    .header .header-nav{
+        width: 30%;
+    }
+
+    .header .header-nav .header-nav-list a{
+        font-size: 2rem;
+    }
+}
+
+
+
