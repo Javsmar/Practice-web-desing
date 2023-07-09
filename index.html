@@ -155,37 +155,51 @@
         <div  class="card">
             <h1>Sing in</h1>
             <form class="form" action="registro.html" method="post" class="form">
-                <div  class="form__element">
-                    <label class="for__label" for="nombre">Nombre</label>
-                    <input class="form__input" type="nombre" id="nombre" placeholder="Add your name"  name="name" required>
-                </div>
-                <div class="form__element">
-                    <label class="for__label" for="apellidos">Apellidos</label>
-                    <input class="form__input" type="text" id="apellidos" placeholder="Add your Last-name" required>
-                </div>
-                
-                <div class="form__element">
-                    <label class="for__label" for="phone">Phone</label>
-                    <input class="form__input" type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
-                </div>
-                <div class="form__element">
-                    <label class="for__label" for="git">Githube username</label>
-                    <input class="form__input" type="text" id="git" name="git" required>
-                </div>
-    
-                <fieldset class="form__element">
-                    <legend>Fav category</legend>
-                    <div>
-                        <label class="for__label" for="shows">shows</label>
-                        <input class="form__input" type="radio" id="shows" name="category" checked value="shows">
-                        <label class="for__label" for="docus">Docus</label>
-                        <input class="form__input" type="radio" id="docus" name="category" checked value="docus">
+                <div class="datos-contacto">
+                    <div class="nombre-apellido">
+                        <div  class="form__element">
+                            <label class="for__label" for="nombre">Nombre</label>
+                            <input class="form__input" type="nombre" id="nombre" placeholder="Add your name"  name="name" required>
+                        </div>
+                        <div class="form__element">
+                            <label class="for__label" for="apellidos">Apellidos</label>
+                            <input class="form__input" type="text" id="apellidos" placeholder="Add your Last-name" required>
+                        </div>
                     </div>
-                </fieldset>
+                    
+                    <div class="phone-git">
+                        <div class="form__element">
+                            <label class="for__label" for="phone">Phone</label>
+                            <input class="form__input" type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
+                        </div>
+                        <div class="form__element">
+                            <label class="for__label" for="git">Githube username</label>
+                            <input class="form__input" type="text" id="git" name="git" required placeholder="Githube username">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how">
+                    <div class="form_elementos">
+                        <label class="for__label meet" for="how">How did you meet me</label><br><br>
+
+                        <label class="for__label" for="how">Universidad</label>
+                        <input class="form--input" type="radio" id="how" name="category" checked value="how"><br>
+
+                        <label class="for__label" for="KeeCoding">KeeCoding kick-off</label>
+                        <input class="form--input" type="radio" id="KeeCoding" name="category" checked value="KeeCoding"><br>
+
+                        <label class="for__label" for="colegio">colegio</label>
+                        <input class="form--input" type="radio" id="colegio" name="category" checked value="colegio"><br>
+
+                        <label class="for__label" for="github">Github</label>
+                        <input class="form--input" type="radio" id="github" name="category" checked value="github">
+                    </div>
+                </div>
 
                 <div class="form__element">
-                    <label class="for__label" for="bio">Bio</label>
-                    <textarea class="form__input" name="bio" id="bio" placeholder="Add your bio" required minlength="10" maxlength="240"></textarea>
+                    <label class="for__label" for="bio">Mas información</label>
+                    <textarea class="form__input" name="bio" id="bio" placeholder="Que mas quieres saber" required minlength="10" maxlength="240"></textarea>
                 </div>
                 
                 

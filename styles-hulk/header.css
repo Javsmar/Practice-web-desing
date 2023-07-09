@@ -2,17 +2,16 @@
     width: 91%;
     height: 50px;
     position: sticky;
-    background: rgb(255,255,255);
+    top: 0;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 27%, rgba(15,15,15,1) 77%, rgba(255,255,255,0) 100%);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     margin: 0 auto;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
+    
+    
+    
 }
 
 
@@ -36,7 +35,7 @@
     width: 350px;
     display: flex;
     position: relative;
-    right: 100px;
+    right: 298px;
     top: 8px;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +47,8 @@
 .btn1{
     width: 350px;
     position: relative;
-    left: 270px;
+    left: 360px;
+    bottom: 8px;
 }
 
 .header .header-nav .header-nav-list a{
@@ -81,13 +81,13 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        right: 170px;
+        right: 155px;
     }
 
     .btn1{
         width: 350px;
         position: relative;
-        left: 210px;
+        left: 198px;
         bottom: 20px;
     }
         

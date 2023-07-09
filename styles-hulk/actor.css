@@ -2,13 +2,6 @@
     width: 100%;
     
 }
-.actor-content{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* border: 2px solid rgb(241, 8, 164); */
-}
-
 
 .actor-about{
     width: 100%;
@@ -74,50 +67,107 @@
 /*-------------------- Media Queries---------------------*/
 
 @media screen and (768px <= width){
+
+    .actor-content{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid rgb(241, 8, 164); */
+    }
     
     .imagen{
-        width: 100%;
-        position: relative;
+        width: 50%;
+        position: absolute;
+        top: 20px;
         bottom: 65px;
+        opacity: 0.6;
         z-index: 0;
-        transform:scaleX(-1);
+        /* border: 2px solid rgb(241, 8, 20); */
+        
+    }
+
+    .the-actor{
+        
+        top: -16px;
+       
+        
+        background:none;
+        /* border: 2px solid rgb(224, 248, 5); */
     }
 
     .actor-about{
-        right: 310px;
-        top: 350px;
-        font-size: x-large;
-        
+        width: 31%;
+        right: 590px;
+        position: absolute;
+        top: 116px;
+        font-size: 1rem;
+        /* border: 2px solid rgb(8, 241, 8); */
     }
 
     .mark-parrafo{
-        top: 1486px;
-        left: 0px;
-        font-size:x-large;
-        line-height: 28px;
+        width: 67%;
+        position: absolute;
+        top: 7px;
+        left: 262px;
+        font-weight: 500;
+        font-size:13px;
+        padding: 30px;
+        background: none;
+        /* border: 2px solid rgb(241, 113, 8); */
     } 
 
-    .the-actor{
-        font-size: xx-large;
-        position: absolute;
-        top: 1380px;
-    }
 
 @media screen and (1024px <= width){
-        .actor-about{
-            right: 460px;
-            top: 320px;
-            font-size: x-large;
-        }
-        .mark-parrafo{
-            top: 1850px;
-            line-height: 30px;
-            font-size: 28px;
-        } 
+    .actor-content{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid rgb(241, 8, 164); */
+    }
+    
+
+    .imagen{
+        width: 46%;
+        position: absolute;
+        top: 50px;
+        left: 35px;
+        opacity: 0.6;
+        z-index: 0;
+        /* border: 2px solid rgb(241, 8, 20); */
         
-        .the-actor{
-            font-size: xx-large;
-            position: absolute;
-            top: 1750px;
-        }
+    }
+    
+    .actor-about{
+        width: 31%;
+        right: 800px;
+        position: absolute;
+        top: 157px;
+        font-size: 1rem;
+        /* border: 2px solid rgb(8, 241, 8); */
+    }
+
+
+    .mark-parrafo{
+        width: 50%;
+        position: absolute;
+        top: 50px;
+        left: 485px;
+        font-size:1rem;
+        padding: 30px;
+        background: none;
+        /* border: 2px solid rgb(241, 113, 8); */
+    } 
+        
+    .the-actor{
+    width: 50;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0;
+    background: none;
 }
