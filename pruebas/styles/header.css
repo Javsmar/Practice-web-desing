@@ -54,7 +54,7 @@ body{
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
 }
- 
+
 
 .btn-hidden{
     display: none;
@@ -80,9 +80,10 @@ body{
 
     .btn{
         transition: background-color .4s linear;
+        border-radius: 5px;
     }
-       
-
+    
+    
 }
 
 

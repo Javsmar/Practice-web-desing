@@ -1,0 +1,35 @@
+.movies{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.movies h2{
+    padding: 0 30px 30px 0;
+}
+.movies-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    padding: 0;
+    gap: 20px;
+}
+
+.movies .movies-list img{
+    width: 100%;
+}
+
+.movies .movies-list figure{
+    margin: 0;
+}
+
+
+@media screen and (768px <= width) {
+    .movies-list{
+        grid-template-columns: repeat(5, 1fr);
+        
+    }
+}
+

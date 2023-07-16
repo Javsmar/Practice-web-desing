@@ -1,13 +1,57 @@
 
 .poster-video{
     width: 100%;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    max-width: 1400px;
     
+}
+
+.texto{
+    padding: 25px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
 }
 .video img{
     width: 100%;
-  
+    position: relative;
+    top: 30px;
 }
 
 .video video{
-    width: 100%;
+    width: 35%;
+    position: relative;
+    bottom: 156px;
+    left: 132px;
+}
+
+/*-------------------- Media Queries---------------------*/
+
+@media screen and (768px <= width){
+    .video video{
+        bottom: 301px;
+        left: 238px;
+    }
+
+}
+
+@media screen and (1024px <= width){
+    .video video{
+        bottom: 412px;
+        left: 318px;
+    }
+}
+
+
+@media screen and (1440px <= width){
+    .video video{
+        bottom: 568px;
+        left: 449px;
+    }
+    .texto{
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
 }
