@@ -4,29 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <link rel="stylesheet" href="styles/prueba.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/skill.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>prueba</title>
 </head>
-<body>
-    <div class="main">
+<body class="main-bg">
+    <header class="header">
+        <div class="header__image">
+            <img src="../assets/app/marvel_logo.png" alt="Logo hulk">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item"><a class="btn btn-hidden hidden-xs " href="#sing-in.html">Sing in</a></li>
+                <li class="header__nav__list__item"><a class="btn btn-hidden hidden-xs" href="posters.html">Shop</a></li>
+                <li class="header__nav__list__item"><a class="btn btn-hidden hidden-xs" href="#contact">Contact</a></li>
+                <li class="header__nav__list__item"><a class="btn hidden-xs" href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="image">
-            <h1>box1</h1>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab exercitationem accusamus a quisquam dolores? Maxime, est! Adipisci blanditiis facere nobis. Ipsam laborum reiciendis blanditiis fugiat repudiandae incidunt illo! Commodi, odio.
-            </p>
-        </div>
+    <div class="main">
         <div class="banner">
-            box2
+            <div class="banner--image">
+                <img src="../assets/app/44365_imqg2f_c_scale,w_1396.jpg" alt="hulk">
+            </div>
+
+            <div class="banner-content">
+                <h1>BRUCE BANNER</h1><br>
+                <h2>HULK</h2><br>
+                <p>Dr Bruce Banner lives a life caught between the soft-spoken <br>
+                    scientist he`s always been and the uncontrollable green <br>
+                    monster powered by his rage.</p>
+            </div>
         </div>
-    
-        <div class="image2">
-            box3
+
+
+        <section class="section-skill">
+            <div class="skill">
+                <h2 class="h2-skill">Skills</h2>
+                <div class="skill-contenedor">
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Fuerza</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="fuerza"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Salto</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="salto"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Velocidad</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="velocidad"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Resistencia</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="resistencia"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Inmunidad</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="inmunidad"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-hulk">
+                        <div class="details-skills">
+                            <span>Regeneración</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="regeneracion"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="contacto">
+            <h1>Sing in</h1>
+            <form class="form" action="registro.html" method="post" class="form">
+                <div class="datos-contacto">
+                    <div class="nombre-apellido">
+                        <div  class="form__element">
+                            <label class="for__label" for="nombre">Nombre</label>
+                            <input class="form__input" type="nombre" id="nombre" placeholder="Add your name"  name="name" required>
+                        </div>
+                        <div class="form__element">
+                            <label class="for__label" for="apellidos">Apellidos</label>
+                            <input class="form__input" type="text" id="apellidos" placeholder="Add your Last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="phone-git">
+                        <div class="form__element">
+                            <label class="for__label" for="phone">Phone</label>
+                            <input class="form__input" type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
+                        </div>
+                        <div class="form__element">
+                            <label class="for__label" for="git">Githube username</label>
+                            <input class="form__input" type="text" id="git" name="git" required placeholder="Githube username">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how">
+                    <div class="form_elementos">
+                        <label class="for__label meet" for="how">How did you meet me</label><br><br>
+
+                        <label class="for__label" for="how">Universidad</label>
+                        <input class="form--input" type="radio" id="how" name="category" checked value="how"><br>
+
+                        <label class="for__label" for="KeeCoding">KeeCoding kick-off</label>
+                        <input class="form--input" type="radio" id="KeeCoding" name="category" checked value="KeeCoding"><br>
+
+                        <label class="for__label" for="colegio">colegio</label>
+                        <input class="form--input" type="radio" id="colegio" name="category" checked value="colegio"><br>
+
+                        <label class="for__label" for="github">Github</label>
+                        <input class="form--input" type="radio" id="github" name="category" checked value="github">
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <div class="form__element">
+                        <label class="for__label" for="bio">Mas información</label>
+                        <textarea class="form__input" name="bio" id="bio" placeholder="Que mas quieres saber" required minlength="10" maxlength="240"></textarea>
+                    </div>
+                </div>
+                
+                
+                <div class="botones">
+                    <div>
+                        <button class="btn btn--secondary" type="reset">reset</button>
+                        <input  class="btn" type="submit" value="sing in">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="banner3">
-            box4
         </div>
-        
     </div>
+
+    <div class="footer">
+        <div class="footer-image">
+            <p>M</p>
+        </div>
+        <div class="icons">
+            <h2>FOLLOW MARVEL</h2>
+            <div class="sosials">
+                <figure>
+                    <a href="https://es-es.facebook.com/Marvel/">
+                        <img class="redes" src="assets/app/square-facebook.svg" alt="logo facebook">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FMarvelStudios">
+                        <img class="redes" src="assets/app/square-twitter.svg" alt="logo twitter">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.instagram.com/marvel/?hl=es">
+                        <img class="redes" src="assets/app/square-instagram.svg" alt="logo instagram">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.youtube.com/results?search_query=marvel">
+                        <img class="redes" src="assets/app/square-youtube.svg" alt="logo youtube">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

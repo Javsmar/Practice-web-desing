@@ -1,0 +1,156 @@
+.section-skill{
+    width: 100%;
+    position: relative;
+    top: 65px;
+    color: black;
+    background-color: #000000;
+    background: black;
+    background-image: url(../assets/app/Avengers-A-Letter-Logo-PNG-Free-Download.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position: 105px;
+    background-size: 50%;
+    color: white;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* border: 2px solid red; */
+}
+
+
+.h2-skill{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 0 0 ;
+    font-size: 1.5rem;
+}
+
+.skill-contenedor .skill-hulk{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.skill-contenedor .skill-hulk .menu{
+    height: 7px;
+    border-radius: 5px;
+    
+    border: 2px solid #29879c;
+}
+
+
+.skill-contenedor .skill-hulk .menu div{
+    width: 0;
+    height: 5px;
+    background-color: #29879c;
+}
+
+
+/*--------------------------------Animación-------------------------*/
+#fuerza{
+    animation: fuerza 2s forwards;
+}
+
+@keyframes fuerza{
+    100%{
+        width: 100%;
+    }
+}
+
+#salto{
+    animation: salto 2s forwards;
+}
+
+@keyframes salto{
+    100%{
+        width: 90%;
+    }
+}
+
+#velocidad{
+    animation: Velocidad 2s forwards;
+}
+
+@keyframes Velocidad{
+    100%{
+        width: 80%;
+    }
+}
+
+#resistencia{
+    animation: resistencia 2s forwards;
+}
+
+@keyframes resistencia{
+    100%{
+        width: 70%;
+    }
+}
+
+#inmunidad{
+    animation: inmunidad 2s forwards;
+}
+
+@keyframes inmunidad{
+    100%{
+        width: 90%;
+    }
+}
+
+#regeneracion{
+    animation: regeneracion 2s forwards;
+}
+
+@keyframes regeneracion{
+    100%{
+        width: 85%;
+    }
+}
+
+/*-------------------- Media Queries---------------------*/
+
+
+
+@media screen and (768px <= width){
+    .section-skill{
+        top: 276px;
+        background-size: 30%;
+        background-position: 255px;
+    }
+
+    .h2-skill{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0 ;
+    }
+
+    .skill-contenedor {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .skill-contenedor .skill-hulk{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (1024px <= width){
+    .section-skill{
+        top: 438px;
+        background-size: 20%;
+        background-position: 400px;
+    }
+}
+
+
+@media screen and (1440px <= width){
+    .section-skill{
+        top: 673px;
+        font-size: 1.5rem;
+        background-size: 15%;
+        background-position: 592px;
+}
